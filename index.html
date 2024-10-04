@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courier Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
       body {
         font-family: "Helvetica", "Arial", sans-serif;
@@ -39,7 +41,13 @@
 
   <body class="bg-white">
     <!--  navbar-1  -->
-    <nav id="navbar-1" class="w-full hidden bg-white shadow fixed top-0 z-50">
+    <nav
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      id="navbar-1"
+      class="w-full hidden bg-white shadow fixed top-0 z-50"
+    >
       <div
         class="mx-auto px-6 lg:px-16 py-5 flex justify-between items-center max-w-7xl"
       >
@@ -48,13 +56,13 @@
 
         <!-- Nav Links -->
         <div class="hidden lg:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-indigo-500 font-medium"
+          <a href="#home" class="text-gray-700 hover:text-indigo-500 font-medium"
             >Home</a
           >
           <a href="#" class="text-gray-700 hover:text-indigo-500 font-medium"
             >About</a
           >
-          <a href="#" class="text-gray-700 hover:text-indigo-500 font-medium"
+          <a href="#services" class="text-gray-700 hover:text-indigo-500 font-medium"
             >Services</a
           >
           <a href="#" class="text-gray-700 hover:text-indigo-500 font-medium"
@@ -96,7 +104,7 @@
       <!-- Mobile Menu -->
       <div id="mobileMenu" class="lg:hidden hidden bg-white py-4">
         <a
-          href="#"
+          href="#home"
           class="block px-6 py-2 text-gray-700 hover:text-indigo-500 font-medium"
           >Home</a
         >
@@ -106,7 +114,7 @@
           >About</a
         >
         <a
-          href="#"
+          href="#services"
           class="block px-6 py-2 text-gray-700 hover:text-indigo-500 font-medium"
           >Services</a
         >
@@ -124,24 +132,30 @@
       </div>
     </nav>
     <!-- Header with Background Slideshow and Overlay -->
-    <header class="relative h-screen bg-slideshow">
+    <header id="home" class="relative h-screen bg-slideshow">
       <!--  navbar-2 -->
-      <nav id="navbar-2" class="w-full bg-transparent shadow fixed top-0 z-50">
+      <nav
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        id="navbar-2"
+        class="w-full bg-transparent shadow fixed top-0 z-50"
+      >
         <div
           class="mx-auto px-6 lg:px-16 py-5 flex justify-between items-center max-w-7xl"
         >
           <!-- Logo -->
-          <a href="#" class="text-2xl font-bold text-indigo-500">CourierX</a>
+          <a href="#home" class="text-2xl font-bold text-indigo-500">CourierX</a>
 
           <!-- Nav Links -->
           <div class="hidden lg:flex space-x-8">
-            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+            <a href="#home" class="text-gray-300 hover:text-indigo-500 font-medium"
               >Home</a
             >
             <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
               >About</a
             >
-            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+            <a href="#services" class="text-gray-300 hover:text-indigo-500 font-medium"
               >Services</a
             >
             <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
@@ -181,9 +195,12 @@
         </div>
 
         <!-- Mobile Menu -2-->
-        <div id="mobileMenu1" class="lg:hidden hidden bg-white bg-opacity-20 backdrop-blur-2xl py-4 rounded-lg shadow-lg">
+        <div
+          id="mobileMenu1"
+          class="lg:hidden hidden bg-white bg-opacity-20 backdrop-blur-2xl py-4 rounded-lg shadow-lg"
+        >
           <a
-            href="#"
+            href="#home"
             class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
             >Home</a
           >
@@ -193,7 +210,7 @@
             >About</a
           >
           <a
-            href="#"
+            href="#services"
             class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
             >Services</a
           >
@@ -209,8 +226,6 @@
             >Get Quote</a
           >
         </div>
-        
-        
       </nav>
 
       <!-- other content -->
@@ -220,12 +235,22 @@
       >
         <div class="max-w-lg">
           <!-- Long Heading -->
-          <h1 class="text-4xl lg:text-6xl font-bold lg:ling-hight">
+          <h1
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            class="text-4xl lg:text-6xl font-bold lg:ling-hight"
+          >
             Swift and Secure Courier Services for Fast, Reliable Deliveries
           </h1>
 
           <!-- Description -->
-          <p class="mt-6 text-lg lg:text-xl">
+          <p
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            class="mt-6 text-lg lg:text-xl"
+          >
             We specialize in providing fast, safe, and reliable courier
             solutions for all your delivery needs, whether local or
             international.
@@ -242,14 +267,19 @@
     </header>
 
     <!-- Services Section -->
-    <section class="py-16 bg-[#F7FBFF]">
-      <div class="max-w-7xl mx-auto px-2 lg:px-2 ">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+    <section id="services" class="py-16 bg-[#F7FBFF]">
+      <div class="max-w-7xl mx-auto px-2 lg:px-2">
+        <h2 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
         >
           <!-- Service Card 1 -->
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
           >
             <img
@@ -272,6 +302,9 @@
 
           <!-- Service Card 2 -->
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
           >
             <img
@@ -294,6 +327,9 @@
 
           <!-- Service Card 3 -->
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
           >
             <img
@@ -316,6 +352,9 @@
 
           <!-- Service Card 4 -->
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
           >
             <img
@@ -479,6 +518,10 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

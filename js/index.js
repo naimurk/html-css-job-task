@@ -1,67 +1,51 @@
-// const menuBtn = document.getElementById("menuBtn");
-// const mobileMenu = document.getElementById("mobileMenu");
-// menuBtn.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("hidden");
-// });
-
-
-// document.addEventListener("scroll", function () {
-//     const navbar = document.getElementById("navbar");
-//     if (window.scrollY > 50) {
-//       navbar.classList.remove("navbar-default");
-//       navbar.classList.add("navbar-scroll");
-//     } else {
-//       navbar.classList.remove("navbar-scroll");
-//       navbar.classList.add("navbar-default");
-//     }
-//   });
-
-
-// const menuBtn = document.getElementById('menuBtn');
-// const mobileMenu = document.getElementById('mobileMenu');
-
-// menuBtn.addEventListener('click', () => {
-//   mobileMenu.classList.toggle('hidden');
-// });
-
-// function openModal(title, description) {
-//   const modal = document.getElementById('modal');
-//   const modalTitle = document.getElementById('modal-title');
-//   const modalDescription = document.getElementById('modal-description');
-
-//   modalTitle.textContent = title;
-//   modalDescription.textContent = description;
-//   modal.classList.remove('hidden');
-// }
-
-// function closeModal() {
-//   const modal = document.getElementById('modal');
-//   modal.classList.add('hidden');
-// }
-  
 function openModal(title, content) {
-    document.getElementById("modal").classList.remove("hidden");
-    document.getElementById("modalTitle").innerText = title;
-    document.getElementById("modalContent").innerText = content;
-  }
+  document.getElementById("modal").classList.remove("hidden");
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalContent").innerText = content;
+}
 
-  // Function to close the modal
-  function closeModal() {
-    document.getElementById("modal").classList.add("hidden");
-  }
+// Function to close the modal
+function closeModal() {
+  document.getElementById("modal").classList.add("hidden");
+}
 
-  // Function to open the quote modal
-  function openQuoteModal() {
-    document.getElementById("quoteModal").classList.remove("hidden");
-  }
+// Function to open the quote modal
+function openQuoteModal() {
+  document.getElementById("quoteModal").classList.remove("hidden");
+}
 
-  // Function to close the quote modal
-  function closeQuoteModal() {
-    document.getElementById("quoteModal").classList.add("hidden");
-  }
+// Function to close the quote modal
+function closeQuoteModal() {
+  document.getElementById("quoteModal").classList.add("hidden");
+}
 
-  // Mobile menu toggle
-  document.getElementById("menuBtn").addEventListener("click", function () {
-    const mobileMenu = document.getElementById("mobileMenu");
-    mobileMenu.classList.toggle("hidden");
-  });
+// Mobile menu toggle
+document.getElementById("menuBtn").addEventListener("click", function () {
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("hidden");
+});
+document.getElementById("menuBtn1").addEventListener("click", function () {
+  const mobileMenu = document.getElementById("mobileMenu1");
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Get navbar elements
+const navbar1 = document.getElementById("navbar-1");
+const navbar2 = document.getElementById("navbar-2");
+
+// Function to handle scroll
+function handleScroll() {
+  console.log("hello world");
+  if (window.scrollY > 50) {
+    // Show navbar 1 and hide navbar 2 when scrolled down
+    navbar1.classList.remove("hidden");
+    navbar2.classList.add("hidden");
+  } else {
+    // Show navbar 2 and hide navbar 1 when at the top
+    navbar1.classList.add("hidden");
+    navbar2.classList.remove("hidden");
+  }
+}
+
+// Event listener for scroll
+window.addEventListener("scroll", handleScroll);

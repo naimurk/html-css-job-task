@@ -38,10 +38,10 @@
   </head>
 
   <body class="bg-white">
-    <!-- Navbar -->
-    <nav class="w-full bg-white shadow fixed top-0 z-50">
+    <!--  navbar-1  -->
+    <nav id="navbar-1" class="w-full hidden bg-white shadow fixed top-0 z-50">
       <div
-        class="mx-auto  px-6 lg:px-16 py-5 flex justify-between items-center max-w-7xl"
+        class="mx-auto px-6 lg:px-16 py-5 flex justify-between items-center max-w-7xl"
       >
         <!-- Logo -->
         <a href="#" class="text-2xl font-bold text-indigo-500">CourierX</a>
@@ -123,13 +123,100 @@
         >
       </div>
     </nav>
-
     <!-- Header with Background Slideshow and Overlay -->
-    <header class="relative h-screen bg-slideshow mt-16">
+    <header class="relative h-screen bg-slideshow">
+      <!--  navbar-2 -->
+      <nav id="navbar-2" class="w-full bg-transparent shadow fixed top-0 z-50">
+        <div
+          class="mx-auto px-6 lg:px-16 py-5 flex justify-between items-center max-w-7xl"
+        >
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-indigo-500">CourierX</a>
+
+          <!-- Nav Links -->
+          <div class="hidden lg:flex space-x-8">
+            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+              >Home</a
+            >
+            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+              >About</a
+            >
+            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+              >Services</a
+            >
+            <a href="#" class="text-gray-300 hover:text-indigo-500 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Get Quote Button -->
+          <div class="hidden lg:block">
+            <a
+              href="#"
+              onclick="openQuoteModal()"
+              class="px-6 py-2 bg-indigo-500 text-white font-semibold rounded-full hover:bg-indigo-600 transition duration-300"
+              >Get Quote</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button id="menuBtn1" class="text-gray-300 focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu1" class="lg:hidden hidden bg-white bg-opacity-20 backdrop-blur-2xl py-4 rounded-lg shadow-lg">
+          <a
+            href="#"
+            class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
+            >About</a
+          >
+          <a
+            href="#"
+            class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="block px-6 py-2 text-white hover:text-indigo-500 font-medium"
+            >Contact</a
+          >
+          <a
+            href="#"
+            onclick="openQuoteModal()"
+            class="block px-6 py-2 mt-4 bg-indigo-500 text-white text-center font-semibold rounded-full"
+            >Get Quote</a
+          >
+        </div>
+        
+        
+      </nav>
+
       <!-- other content -->
       <div class="absolute inset-0 bg-black bg-opacity-60"></div>
       <div
-        class="relative z-10 flex items-center justify-start  h-full px-6 lg:px-16 py-20 text-white max-w-7xl mx-auto"
+        class="relative z-10 flex items-center justify-start h-full px-6 lg:px-16 py-20 text-white max-w-7xl mx-auto"
       >
         <div class="max-w-lg">
           <!-- Long Heading -->
@@ -156,9 +243,11 @@
 
     <!-- Services Section -->
     <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-2 lg:px-2 xl:px-0 ">
+      <div class="max-w-7xl mx-auto px-2 lg:px-2 xl:px-0">
         <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
           <!-- Service Card 1 -->
           <div
             class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"

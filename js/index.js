@@ -22,11 +22,24 @@ function closeQuoteModal() {
 // Mobile menu toggle
 document.getElementById("menuBtn").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobileMenu");
+  const hamburgerIcon = document.getElementById("hamburgerIcon");
+  const closeIcon = document.getElementById("closeIcon");
+
   mobileMenu.classList.toggle("hidden");
+
+  // Toggle visibility between the hamburger and close icons
+  hamburgerIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
 });
 document.getElementById("menuBtn1").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobileMenu1");
+  const hamburgerIcon = document.getElementById("hamburgerIcon1");
+  const closeIcon = document.getElementById("closeIcon1");
+
   mobileMenu.classList.toggle("hidden");
+  // Toggle visibility between the hamburger and close icons
+  hamburgerIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
 });
 
 // Get navbar elements
